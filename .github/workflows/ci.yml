@@ -55,4 +55,4 @@ jobs:
 #           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag $DOCKER_IMAGE_NAME
+        run: docker build . --file Dockerfile.ubuntu.novnc --tag $DOCKER_IMAGE_NAME

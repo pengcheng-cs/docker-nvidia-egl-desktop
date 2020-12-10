@@ -15,13 +15,13 @@ fi
 
 printf "3\nn\nx\n" | sudo /opt/VirtualGL/bin/vglserver_config
 
-for drm in /dev/dri/card*
-do
-if /opt/VirtualGL/bin/eglinfo ${drm}; then
-    export VGL_DISPLAY=${drm}
-    break
-fi
-done
+# for drm in /dev/dri/card*
+# do
+# if /opt/VirtualGL/bin/eglinfo ${drm}; then
+#     export VGL_DISPLAY=${drm}
+#     break
+# fi
+# done
 
 export TVNC_WM=mate-session
 
